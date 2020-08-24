@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "F:/liyuanshuo/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../include/c++/10.2.0",
+                "F:/liyuanshuo/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../include/c++/10.2.0/x86_64-w64-mingw32",
+                "F:/liyuanshuo/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../include/c++/10.2.0/backward",
+                "F:/liyuanshuo/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/include",
+                "F:/liyuanshuo/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../include",
+                "F:/liyuanshuo/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/include-fixed",
+                "F:/liyuanshuo/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "F:/liyuanshuo/MSYS2/mingw64/bin/g++.exe",
+            "intelliSenseMode": "gcc-x64",
+            "cStandard": "c18",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,46 @@
+{
+	// Place your CProgram2019 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"head file": {
+		"scope": "cpp,c",
+		"prefix": "bag01",
+		"body": [
+			"int bag01(const vector<int> &weight, const vector<int> &value, int cap) {",
+            "    int n = weight.size();",
+            "    if (n == 0 && cap == 0) return 0;",
+            "",
+            "    vector<vector<int>> memo(2, vector<int>(cap + 1, 0));",
+            "",
+            "    for (int j = 0; j <= cap; j++) {",
+            "        memo[0][j] = (j >= weight[0] ? value[0] : 0);",
+            "    }",
+            "    for (int i = 1; i < n; i++) {",
+            "        for (int j = 0; j <= cap; j++) {",
+            "            memo[i % 2][j] = memo[(i - 1) % 2][j];",
+            "            if (j >= weight[i]) {",
+            "                memo[i % 2][j] =",
+            "                    max(memo[i % 2][j],",
+            "                        value[i] + memo[(i - 1) % 2][j - weight[i]]);",
+            "            }",
+            "        }",
+            "    }",
+            "    return memo[(n - 1) % 2][cap];",
+            "}"
+		],
+		"description": "01背包问题的目标代码"
+	}
+}
